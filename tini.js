@@ -5,7 +5,7 @@ var root = paths.join(__dirname+'/daizhuanhuan')
  
 const tinify = require("tinify");
 tinify.key = "你的api_KEY,注册网站获取";
-
+tinify.proxy = "http://user:pass@192.168.0.1:8080"; //增加代理网站
 readDirSync(root)
 
 function readDirSync(path){
